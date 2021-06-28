@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* Diferentes formas de escribir una función */
+
+        function sumar (parametro1, parametro2){
+            resultado = parametro1 + parametro2
+            return resultado;
+        }
+
+        console.log(sumar(7,5));
+
+        let restar = (parametro1, parametro2) => {
+            resultado = parametro1 - parametro2
+            return resultado;
+        }
+
+        console.log(restar(7,5));
+
+        let multiplicar = (parametro1, parametro2) => parametro1 * parametro2
+
+        console.log(multiplicar(7,5));
+
+        
+        //Scope let
+        let scope = "Soy global";
+
+        function testScope() {
+            let scope = "Soy local";
+            console.log ("Adentro de la función: " + scope);     
+        }
+
+        testScope(); 
+        console.log("Afuera de la función: " + scope);
+
+        //Scope const
+        const scope2 = "Soy global";
+
+        function testScope2() {
+            const scope2 = "Soy local";
+            console.log ("Adentro de la función: " + scope2);     
+        }
+
+        testScope2(); 
+        console.log("Afuera de la función: " + scope2);
+
+        //Scope const
+        const scope3 = "Soy global";
+
+        function testScope3() {
+            console.log ("Adentro de la función: " + scope3);     
+        }
+
+        testScope3(); 
+        console.log("Afuera de la función: " + scope3);
+
+
+
+    </script>
+</body>
+</html>
