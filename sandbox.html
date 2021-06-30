@@ -44,6 +44,32 @@
 
         console.log(es_par1(21)); //false
         console.log(es_par1(12)); //true
+
+
+        // programamos: funcion cuadrado
+        let cuadrado = (numero) => numero * numero;
+
+        console.log(cuadrado(3));
+
+        // programamos: factorial
+        // factorial(1) = 1
+        // factorial(2) = 2 * 1 = 2
+        // factorial(3) = 3 * factorial(2) * 1 = 6
+        // 
+        function factorial(n) {
+            console.log(n);
+            if (n == 1) {
+                return 1;
+            } else {
+                return n * factorial(n - 1);
+            }
+        }
+        console.log(factorial(20))
+
+
+
+
+
         
 
 
